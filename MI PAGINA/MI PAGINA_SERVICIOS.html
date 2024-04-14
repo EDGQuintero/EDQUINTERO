@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio: Ed Quintero</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #333; /* Cambiar el color de fondo a gris oscuro */
+            color: #fff; /* Cambiar el color del texto a blanco */
+			font-size: 16px; /* Tamaño de fuente base */
+			text-align: center;
+        }
+        header {
+            background-color: #222; /* Cambiar el color de fondo del encabezado a un tono más oscuro */
+            padding: 20px 0;
+            text-align: center;
+        }
+        .container {
+            width: 315%;
+            margin: 0 auto;
+            padding: 20px;
+            justify-content: space-between; /* Distribuir los proyectos uniformemente */
+		
+        }
+        .project {
+            width: 30%; /* Definir el ancho de cada proyecto */
+            margin-bottom: 30px;
+            background-color: #222; /* Cambiar el color de fondo de cada proyecto */
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Cambiar el color de la sombra de los proyectos */
+            position: relative; /* Asegura que el contenedor del proyecto sea relativo para que los elementos absolutos estén posicionados correctamente */
+            transition: background-color 0.3s ease; /* Agrega una transición suave para el cambio de color de fondo */
+        }
+        .project::before {
+            content: ''; /* Agrega un contenido vacío para el pseudo-elemento */
+            position: absolute; /* Posiciona el pseudo-elemento de forma absoluta */
+            top: 0;
+            left: 0;
+            width: 100%; /* Haz que el pseudo-elemento ocupe todo el ancho del contenedor del proyecto */
+            height: 100%; /* Haz que el pseudo-elemento ocupe todo el alto del contenedor del proyecto */
+            background-color: rgba(0, 0, 255, 0.2); /* Color de fondo semitransparente (aquí negro con un 50% de opacidad) */
+            opacity: 0; /* Inicialmente, el overlay no es visible */
+            transition: opacity 0.3s ease; /* Agrega una transición suave para la opacidad */
+        }
+
+        .project:hover::before {
+            opacity: 1; /* Hace que el overlay sea visible cuando se pasa el mouse sobre el proyecto */
+        }
+        
+        .project img {
+            max-width: 100%; /* Permitir que las imágenes se ajusten al ancho del contenedor */
+            height: auto;
+            border-radius: 5px;
+        }
+        .project h2,
+        .project p {
+            position: relative; /* Asegura que el texto esté por encima del overlay */
+            z-index: 2; /* Coloca el texto sobre el overlay */
+        }
+        .project a {
+            display: inline-block;
+            background-color: #D24689; /* Color de fondo del botón */
+            color: white; /* Color del texto */
+            padding: 10px 20px; /* Espaciado interno del botón */
+            text-decoration: none; /* Elimina el subrayado del enlace */
+            border-radius: 5px; /* Borde redondeado del botón */
+            transition: background-color 0.3s ease; /* Agrega una transición suave para el cambio de color de fondo */
+        }
+        .project a:hover {
+            background-color: #0F746F; /* Cambia el color de fondo cuando pasas el mouse sobre el botón */
+        }
+        footer {
+            background-color: #222; /* Cambiar el color de fondo del pie de página a un tono más oscuro */
+            text-align: center;
+            padding: 20px 0;
+        }
+		h2 {
+	    font-size: 1.2em; /* 1.4 veces el tamaño de fuente base */
+    max-width: 100%; /* Permitir que las imágenes se ajusten al ancho del contenedor */
+	overflow:hidden;
+		}
+		/* MENU */
+		nav {
+    text-align: center; /* Alinea el contenido del menú al centro */
+    background-color: #333; /* Color de fondo del menú */
+    padding: 40px 0; /* Espaciado interior del menú */
+}
+
+ul {
+    list-style: none; /* Quita los estilos de lista */
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block; /* Muestra los elementos de lista en línea */
+    margin-right: 20px; /* Espaciado entre elementos de lista */
+}
+
+ul li:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último elemento de lista */
+}
+
+ul li a {
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: #fff; /* Color del texto del enlace */
+    padding: 10px 20px; /* Espaciado interior del enlace */
+    border-radius: 5px; /* Borde redondeado */
+    background-color: #D24689; /* Color de fondo del enlace */
+}
+
+ul li a:hover {
+    background-color: #C387B1; /* Color de fondo del enlace al pasar el ratón */
+}
+    </style>
+</head>
+<body>
+
+    
+    <header>
+   
+        <img src="GALERIA/LOW RESOLUCI{ON/LOGO.png" alt="Logo" width="150" height="auto"> <!-- Cambia "tu_logo.png" por la ruta de tu imagen de logo -->
+        <h1>SERVICIOS</h1>
+        <h3>Eduardo García Quintero</h3>
+        
+             <nav>
+        <ul>
+           <li><a href="MI PAGINA_INICIO.html">INICIO</a></li>
+            <li><a href="">SERVICIOS</a></li>
+            <li><a href="MI PAGINA_CONTACTO.html">CONTACTO</a></li>
+        </ul>
+  </nav>
+    </header>
+
+    <div class="container">
+        <div class="project">
+          <h2>COMISIONES</h2>
+              <img src="GALERIA/SERVICIOS/COMISIC1.png" alt="Proyecto 1">
+            <h2>COMISIONES</h2>
+            <p>Comisiones semi  sencillas de ilustración a $150 MX / $11 USD. </p>
+             <p> Preguntar si quieres otro estilo de ilustración o un trabajo más complejo</p>
+                <p> CONSULTA TERMINOS Y CONDICIONES </p>
+  			<a href="MI PAGINA_CONTACTO.html" target="_blank"> PREGUNTA EN REDES</a>
+            	<a href="GALERIA/SERVICIOS/TERMINOS DE SERVICIO.png" target="_blank"> CONDICIONES</a>
+        </div>
+        
+         <div class="project">
+            <h2>DISEÑO E IMPRESIÓN DE PLAYERAS</h2>
+            <img src="GALERIA/SERVICIOS/PLAY1.png" alt="Proyecto 1">
+            <img src="GALERIA/SERVICIOS/PLAY2.png" alt="Proyecto 1">
+    
+            <h2>DISEÑO E IMPRESIÓN DE PLAYERAS</h2>
+            <p>*SOLO EN PUEBLA/MÉXICO* (DE MOMENTO)</p>
+             <p>Puedes apoyarme comprando una de mis playeras en DTF con uno de mis diseños por solo $170, también si quieres que imprima algunas con tus diseños y te las entregue.</p>
+           <a href="MI PAGINA_CONTACTO.html" target="_blank"> PREGUNTA EN REDES</a>
+    
+        </div>
+        
+          <div class="project">
+          	<h2>SERVICIO DE DISEÑO GRÁFICO</h2>
+            <img src="GALERIA/SERVICIOS/DISEÑO_!.png" alt="Proyecto 1">
+            <h2>SERVICIO DE DISEÑO GRÁFICO</h2>
+            <p>Pregunta para cotizar algún proyecto que requiera diseño gráfico. Folletos, carteles, marcas e identidad de marca, empaques, infografías, etc.</p>
+            <a href="https://www.behance.net/gallery/191128609/PORTAFOLIO-BOOK-2024-EDUARDO-GARCIA-QUINTERO" target="_blank">PORTAFOLIO DE DISEÑO</a>
+            <a href="MI PAGINA_CONTACTO.html" target="_blank"> PREGUNTA EN REDES</a>
+        </div>
+        
+          <div class="project">
+          	<h2>SERVICIOS EN FIVERR</h2>
+            <img src="GALERIA/SERVICIOS/FIV0.png" alt="Proyecto 1">
+            <h2>SERVICIOS EN FIVERR</h2>
+            <p>Gigs / Servicios en Fiverr</p>
+            <a href="https://es.fiverr.com/eduardogar_06?up_rollout=true" target="_blank"> FIVERR</a>
+        </div>
+        <!-- Agrega más proyectos aquí -->
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Ed Quintero</p>
+    </footer>
+</body>
+</html>
+
+    <style>
+   
+        .project {
+            width: 30%; /* Definir el ancho de cada proyecto */
+            margin-bottom: 30px;
+            background-color: #222; /* Cambiar el color de fondo de cada proyecto */
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Cambiar el color de la sombra de los proyectos */
+            position: relative; /* Asegura que el contenedor del proyecto sea relativo para que los elementos absolutos estén posicionados correctamente */
+            transition: background-color 0.3s ease; /* Agrega una transición suave para el cambio de color de fondo */
+            overflow: hidden; /* Evita que el overlay se extienda más allá del contenedor del proyecto */
+        }
+        .project img {
+            max-width: 100%; /* Permitir que las imágenes se ajusten al ancho del contenedor */
+            height: auto;
+            border-radius: 5px;
+            transition: opacity 0.3s ease; /* Agrega una transición suave para la opacidad */
+        }
+        .project:hover img {
+            opacity: 300; /* Reduce la opacidad de la imagen al pasar el mouse sobre el proyecto */
+        }
+        .project::before {
+            content: ''; /* Agrega un contenido vacío para el pseudo-elemento */
+            position: absolute; /* Posiciona el pseudo-elemento de forma absoluta */
+            top: 0;
+            left: 0;
+            width: 100%; /* Haz que el pseudo-elemento ocupe todo el ancho del contenedor del proyecto */
+            height: 100%; /* Haz que el pseudo-elemento ocupe todo el alto del contenedor del proyecto */
+            background-color: rgba(0, 250, 300, 0.15); /* Color de fondo semitransparente (aquí negro con un 50% de opacidad) */
+            opacity: 0; /* Inicialmente, el overlay no es visible */
+            transition: opacity 0.3s ease; /* Agrega una transición suave para la opacidad */
+            pointer-events: none; /* Evita que el overlay interrumpa los clics en el contenido subyacente */
+        }
+        .project:hover::before {
+            opacity: 1; /* Hace que el overlay sea visible cuando se pasa el mouse sobre el proyecto */
+        }
+        .project-content {
+            position: relative; /* Asegura que el contenido del proyecto esté por encima del overlay */
+            z-index: 2; /* Coloca el contenido del proyecto sobre el overlay */
+        }
+    </style>
